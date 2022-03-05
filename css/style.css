@@ -102,7 +102,7 @@ ol li:before {
   transform: translateY(0.7rem) rotate(45deg);
 }
 
-ul#competences {
+#competences {
   display: flex;
 }
 
