@@ -12,7 +12,7 @@ main {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header {
@@ -21,6 +21,8 @@ header {
   color: #FFFFFF;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  text-align: center;
+  line-height: 2rem;
 }
 
 #top__head {
@@ -32,8 +34,8 @@ header {
 .header__logo {
   background-image: url(../images/logo.jpg);
   background-size: cover;
-  width: 6rem;
-  height: 6rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 100%;
   margin-top: 0.3rem;
 }
@@ -120,10 +122,32 @@ img.competence__img {
 time {
   font-style: italic;
   border-left: 0.1rem solid;
-  float: right;
+  padding-left: 1rem;
 }
 
 span.text__syne {
   font-family: 'Syne Mono';
   font-weight: bold;
+}
+a.formation__liens {
+  text-decoration: none;
+  color: black;
+}
+#description__perso{
+  text-align: center;
+  border-bottom: 0.1rem solid #979b9e;
+  padding-top: 2rem;
+}
+@media only screen and (min-width: 600px) {
+  .header__logo {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+  }
+  #top__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
