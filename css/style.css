@@ -29,10 +29,13 @@ header {
   align-items: center;
 }
 
-header img {
-  width: 16%;
+.header__logo {
+  background-image: url(../images/logo.jpg);
+  background-size: cover;
+  width: 6rem;
+  height: 6rem;
   border-radius: 100%;
-  padding: 0.1rem;
+  margin-top: 0.3rem;
 }
 
 ul#social__nav {
@@ -102,8 +105,8 @@ ol li:before {
   transform: translateY(0.7rem) rotate(45deg);
 }
 
-#competences {
-  display: flex;
+ul#competences {
+  text-align: center;
 }
 
 img.competence__img {
@@ -120,3 +123,7 @@ time {
   float: right;
 }
 
+span.text__syne {
+  font-family: 'Syne Mono';
+  font-weight: bold;
+}
