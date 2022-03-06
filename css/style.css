@@ -123,21 +123,29 @@ time {
   font-style: italic;
   border-left: 0.1rem solid;
   padding-left: 1rem;
+  display: inline-block;
 }
 
 span.text__syne {
   font-family: 'Syne Mono';
   font-weight: bold;
 }
+
 a.formation__liens {
   text-decoration: none;
   color: black;
 }
+
 #description__perso{
   text-align: center;
   border-bottom: 0.1rem solid #979b9e;
   padding-top: 2rem;
 }
+
+section {
+  margin-bottom: 20%;
+}
+
 @media only screen and (min-width: 600px) {
   .header__logo {
     width: 6rem;
