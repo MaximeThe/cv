@@ -31,16 +31,15 @@ header {
   align-items: center;
 }
 
-.header__logo {
+#top__head__logo {
   background-image: url(../images/logo.jpg);
   background-size: cover;
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
-  margin-top: 0.3rem;
 }
 
-ul#social__nav {
+ul#header__description__social__nav {
   display: flex;
   justify-content: center;
 }
@@ -146,8 +145,15 @@ section {
   margin-bottom: 20%;
 }
 
+.description__perso__img {
+  max-width: 100%;
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
 @media only screen and (min-width: 600px) {
-  .header__logo {
+  #top__head__logo {
     width: 6rem;
     height: 6rem;
     margin: 1rem;
