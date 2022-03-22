@@ -2,6 +2,10 @@ body {
     font-family: "Syne Mono", cursive;
     line-height: 1.2em;
 }
+#dark--mode {
+    background:black;
+    color: #FFFFFF;
+}
 
 .wrapper {
     width: 80%;
