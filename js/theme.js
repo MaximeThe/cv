@@ -22,5 +22,3 @@ function handleClick(event) {
 
 };
 
-
-zzzz
