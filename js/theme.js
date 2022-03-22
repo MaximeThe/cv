@@ -16,7 +16,7 @@ function handleClick(event) {
     event.preventDefault();
 
     // On recupére l'intérieur de la class 'body'
-    const newsletter = document.querySelector('#theme');
+    const newsletter = document.querySelector('.theme');
     //on rajoute la class 'dark__theme' à notre valeur 'body'
     newsletter.classList.toggle('theme--dark');
 

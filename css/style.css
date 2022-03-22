@@ -2,7 +2,7 @@ body {
     font-family: "Syne Mono", cursive;
     line-height: 1.2em;
 }
-#theme--dark {
+.theme--dark {
     background:black;
     color: #FFFFFF;
 }
