@@ -3,8 +3,14 @@ body {
     line-height: 1.2em;
 }
 .theme--dark {
-    background:black;
+    background:#262423;
     color: #FFFFFF;
+    
+}
+
+.fa-fade{
+    --fa-animation-duration: 2s;
+    --fa-fade-opacity: 0.6;;
 }
 
 .fa-sun{
@@ -20,14 +26,19 @@ body {
     color: #FFFFFF !important;
 }
 
-#clickTheme{
-    font-size: 1rem;
+.fa-moon::before {
+    color: #000000;
+}
+.fa-sun::before {
+    color: #ffffff;
+}
+#clickTheme {
+    font-size: 1.5rem;
     right: 0;
     position: fixed;
-    background: url(images/header.jpg);
+    margin: 0.2rem;
+    border: 0.1rem solid #000000;
     border-radius: 100%;
-    color: #000000;
-    margin: 0.1rem;
     padding: 0.1rem;
 }
 
@@ -44,7 +55,7 @@ main {
 }
 
 header {
-    background:url(images/header.jpg);
+    background:url(../images/header.jpg);
     background-size: cover;
     color: #FFFFFF;
     border-bottom-left-radius: 1rem;
@@ -60,7 +71,7 @@ header {
 }
 
 #top__head__logo {
-    background-image: url(images/logo.jpg);
+    background-image: url(../images/logo.jpg);
     background-size: cover;
     width: 3rem;
     height: 3rem;
@@ -82,7 +93,7 @@ h2 {
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 1rem 0;
-    background:url(images/header.jpg);
+    background:url(../images/header.jpg);
     background-size: cover;
     color: #FFFFFF;
     box-shadow: 0.1rem 0.1rem 1rem #00000070;
@@ -114,7 +125,7 @@ ol li:before {
     height: 20px;
     font-family: "Syne Mono", cursive;
     margin-right: 5px;
-    background:url(images/header.jpg);
+    background:url(../images/header.jpg);
     color: #ffffff;
     font-weight: bold;
     font-size: 140%;
@@ -180,9 +191,7 @@ section {
     margin: auto;
 }
 
-::before {
-    color: #000000;
-}
+
 
 @media only screen and (min-width: 600px) {
     #top__head__logo {
