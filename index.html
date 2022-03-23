@@ -93,28 +93,29 @@
                 <!--Liste Compétences-->
                 <section>
                     <h2>Compétences</h2>
-                        <ul id="competences">
-                            <li> 
-                                <p class="fa-brands fa-html5"> 
-                                    <span class="text__syne">HTML / CSS</span>
-                                </p>
-                            </li>
+                    
+                    <!--Slider-->
+                    <div id="slideshow-container">
+                        <div class="mySlides fade">
+                            <p class="text__syne">HTML / CSS<i class="fa-brands fa-html5"></i></p>
+                        </div>
+                        <div class="mySlides fade">
+                            <p class="text__syne">PHP<i class="fa-brands fa-php"></i></p>
+                        </div>
+                        <div class="mySlides fade">
+                            <p class="text__syne">JavaScript<i class="fa-brands fa-html5"></i></p>
+                        </div>
 
-                            <li> 
-                                <p class="fa-brands fa-php"> 
-                                    <span class="text__syne">≈ PHP</span>
-                                </p>
-                            </li>
-
-                            <li> 
-                                <p class="fa-brands fa-js"> 
-                                    <span class="text__syne">≈ JavaScript</span>
-                                </p>
-                            </li>
-                        </ul>
+                         <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                     </div>    
                 </section>
             </main>
         </div>
         <script src="js/theme.js"></script>
+        <script src="js/slider.js"></script>
     </body>
 </html>
