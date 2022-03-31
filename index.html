@@ -14,16 +14,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <!-- <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"> -->
         <script src="https://kit.fontawesome.com/6d373d07e2.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class="theme">
-         <!--Changement de thème -->
+    <body>
+         <!--Icon thème -->
          <div id="clickTheme">
-                <!--Icon thème-->
-                <a href=""><i class="fa-solid fa-moon fa-fade"></i></a>
-                <a href=""><i class="fa-solid fa-sun fa-fade"></i></a>
+                <a href=""><i id="iconTheme" class="fa-solid fa-moon fa-fade"></i></a>
         </div>
         <div class="wrapper">
 
@@ -95,27 +93,14 @@
                     <h2>Compétences</h2>
                     
                     <!--Slider-->
-                    <div id="slideshow-container">
-                        <div class="mySlides fade">
-                            <p class="text__syne">HTML / CSS<i class="fa-brands fa-html5"></i></p>
-                        </div>
-                        <div class="mySlides fade">
-                            <p class="text__syne">PHP<i class="fa-brands fa-php"></i></p>
-                        </div>
-                        <div class="mySlides fade">
-                            <p class="text__syne">JavaScript<i class="fa-brands fa-html5"></i></p>
-                        </div>
-
-                         <div class="dot-container">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span> 
-                        </div>
-                     </div>    
+                    <div id="sliderCompetence">
+                    </div>    
                 </section>
             </main>
         </div>
+        
         <script src="js/theme.js"></script>
-        <script src="js/slider.js"></script>
+        <!-- <script src="js/categorie.js"></script> -->
+        <script src="js/app.js"></script>
     </body>
 </html>
