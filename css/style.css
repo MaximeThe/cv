@@ -8,15 +8,11 @@ body {
     
 }
 .fa-solid, .fas {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 1.5rem;
-    right: 0;
-    position: fixed;
+    font-size: 1.2rem;
     margin: 0.2rem;
     border: 0.1rem solid #000000;
-    border-radius: 100%;
-    padding: 0.1rem;
+    border-radius: 1rem;
+    background: #fff;
 }
 .fa-fade{
     --fa-animation-duration: 2s;
@@ -26,7 +22,7 @@ body {
 
 .fa-sun{
     display: inline-block !important;
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 .fa-moon{
@@ -35,25 +31,32 @@ body {
 }
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     margin: auto;
+}
+.nav{
+    width: 100%;
+    position: fixed;
+    background: #29282d;
+    text-align: right;
 }
 
 main {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 header {
-    background:url(../images/header.jpg);
+    background: url(../images/header.jpg);
     background-size: cover;
     color: #FFFFFF;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    text-align: center;
-    line-height: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -79,7 +82,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 0.2rem;
     background:url(../images/header.jpg);
     background-size: cover;
     color: #FFFFFF;
@@ -182,20 +185,43 @@ section {
 
 /*------Responsive-------*/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 740px) {
     aside{
         width: 30%;
         background: #7d6461;  
     }
     section{
         margin: 2rem;
+        position: relative;
+        width: 70%;
     }
     .wrapper{
         display: flex;
         flex-wrap: wrap;
+        padding-top: 5%;
     }
     main{
         width: 70%;
+        justify-content: space-between;
+        order: 1;
+    }
+    ol {
+        height: 10rem;
+    }
+    .h2__section-droite{
+        position: absolute;
+        top: -2rem;
+        right: 8rem;
+        width: 70%;
+    }
+    .h2__section-gauche {
+        top: -2rem;
+        left: -2rem;
+        position: absolute;
+        width: 70%;
+    }
+    #description__perso {
+        margin: 1rem auto;
     }
 
 }

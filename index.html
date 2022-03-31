@@ -19,30 +19,34 @@
 	</head>
 	<body>
 		<!--Icon thème -->
-		<header>
-			<a href=""><i id="iconTheme" class="fa-solid fa-moon fa-fade"></i></a>
-			<h1>Maxime Theneau</h1>
-			<span id="top__head__logo"></span>
-		</header>
+        <div class="nav">
+            <a href=""><i id="iconTheme" class="fa-solid fa-moon fa-fade"></i></a>
+        </div>
+		
 		<div class="wrapper">
 			
 			<main>
+                <header>
+                    <h1>Maxime Theneau</h1>
+                    <span id="top__head__logo"></span>
+                    <p class="header__description">
+						≈Développeur__Marseille
+					</p>
+                </header>
 				<!--Description Page-->
 				<section id="description__perso">
 					<!-- Image désactiver-->
 					<!--
 					<img src="./images/description.jpg" alt="description" class="description__perso__img">
 					-->
-					<p class="header__description">
-						≈Développeur__Marseille
-					</p>
+					
 					<p>
 						Après 15 ans à créer blogs et sites web, sans diplôme en poche, je me reconvertis pour devenir développeur à Marseille.
 					</p>
 				</section>
 				<!--Liste Expériences-->
-				<section >
-					<h2>Expériences professionnelles</h2>
+				<section class="section-droite" >
+					<h2 class="h2__section-droite">Expériences professionnelles</h2>
 					<ol >
 						<li>
 							<p>
@@ -56,8 +60,8 @@
 					</ol>
 				</section>
 				<!--Liste Formation-->
-				<section>
-					<h2>Formation</h2>
+				<section class="section-gauche">
+					<h2 class="h2__section-gauche">Formation</h2>
 					<ol>
 						<li >
 							<p>
@@ -71,8 +75,8 @@
 					</ol>
 				</section>
 				<!--Liste Compétences-->
-				<section>
-					<h2>Compétences</h2>
+				<section class="section-droite">
+					<h2 class="h2__section-droite">Compétences</h2>
 					<!--Slider-->
 					<div id="sliderCompetence"></div>
 				</section>
