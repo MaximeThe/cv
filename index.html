@@ -19,21 +19,61 @@
 	</head>
 	<body>
 		<!--Icon thème -->
-        <div class="nav">
+		<header>
+			<h1>Maxime Theneau</h1>
+			<span id="top__head__logo"></span>
+			<p class="header__description">
+				≈Développeur__Marseille
+			</p>
+		</header>
+		<div id="navBar">
             <a href=""><i id="iconTheme" class="fa-solid fa-moon fa-fade"></i></a>
         </div>
 		
 		<div class="wrapper">
 			
 			<main>
-                <header>
-                    <h1>Maxime Theneau</h1>
-                    <span id="top__head__logo"></span>
-                    <p class="header__description">
-						≈Développeur__Marseille
-					</p>
-                </header>
-				<!--Description Page-->
+         
+				
+				<!--Liste Expériences-->
+				<section class="section-droite" >
+					<h2 class="h2__section-droite">Expériences professionnelles</h2>
+					<ul >
+						<li>
+							<p>
+								<strong>Premier arrivé</strong>
+								, premier servi !
+								<time datetime="2022-09">
+									Septembre 2022
+								</time>
+							</p>
+						</li>
+					</ul>
+				</section>
+				<!--Liste Formation-->
+				<section class="section-gauche">
+					<h2 class="h2__section-gauche">Formation</h2>
+					<ul>
+						<li >
+							<p>
+								<strong><a class="formation__liens" href="https://oclock.io/formations/developpeur-web"> O'clock</a></strong>
+								Développeur Web
+								<time datetime="2022-02">
+									Février 2022
+								</time>
+							</p>
+						</li>
+					</ul>
+				</section>
+				<!--Liste Compétences-->
+				<section class="section-droite">
+					<h2 class="h2__section-droite">Compétences</h2>
+					<!--Slider-->
+					<div id="sliderCompetence"></div>
+				</section>
+			</main>
+            <aside>
+                <!--Description Page-->
 				<section id="description__perso">
 					<!-- Image désactiver-->
 					<!--
@@ -44,44 +84,6 @@
 						Après 15 ans à créer blogs et sites web, sans diplôme en poche, je me reconvertis pour devenir développeur à Marseille.
 					</p>
 				</section>
-				<!--Liste Expériences-->
-				<section class="section-droite" >
-					<h2 class="h2__section-droite">Expériences professionnelles</h2>
-					<ol >
-						<li>
-							<p>
-								<strong>Premier arrivé</strong>
-								, premier servi !
-								<time datetime="2022-09">
-									Septembre 2022
-								</time>
-							</p>
-						</li>
-					</ol>
-				</section>
-				<!--Liste Formation-->
-				<section class="section-gauche">
-					<h2 class="h2__section-gauche">Formation</h2>
-					<ol>
-						<li >
-							<p>
-								<strong><a class="formation__liens" href="https://oclock.io/formations/developpeur-web"> O'clock</a></strong>
-								Développeur Web
-								<time datetime="2022-02">
-									Février 2022
-								</time>
-							</p>
-						</li>
-					</ol>
-				</section>
-				<!--Liste Compétences-->
-				<section class="section-droite">
-					<h2 class="h2__section-droite">Compétences</h2>
-					<!--Slider-->
-					<div id="sliderCompetence"></div>
-				</section>
-			</main>
-            <aside>
 				<!--Liste liens social-->
 				<ul id="header__description__social__nav">
 					<li>
@@ -100,6 +102,7 @@
 			</aside>
 		</div>
 		<script src="js/theme.js"></script>
+		<script src="js/navBar.js"></script>
 		<!--
 		<script src="js/categorie.js"></script>
 		-->

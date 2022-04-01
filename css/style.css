@@ -3,7 +3,7 @@ body {
     line-height: 1.2em;
 }
 .theme-dark {
-    background:#262423;
+    background:#29282d;
     color: #FFFFFF;
     
 }
@@ -34,12 +34,25 @@ body {
     width: 90%;
     margin: auto;
 }
-.nav{
-    width: 100%;
+.fixed-nav {
     position: fixed;
+
+  }
+#navBar{
+    width: 100%;
     background: #29282d;
     text-align: right;
+    color: #fff;
+    z-index: 999;
 }
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
 
 main {
     display: flex;
@@ -49,10 +62,9 @@ main {
 }
 
 header {
-    background: url(../images/header.jpg);
+    background: #29282d;
     background-size: cover;
     color: #FFFFFF;
-    border-radius: 1rem;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -67,6 +79,8 @@ header {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
+    order: -1;
+    margin: 0.5rem 0 0 0;
 }
 
 ul#header__description__social__nav {
@@ -83,8 +97,7 @@ h2 {
     font-size: 1.5em;
     border-radius: 1rem;
     padding: 0.2rem;
-    background:url(../images/header.jpg);
-    background-size: cover;
+    background:#29282d;
     color: #FFFFFF;
 }
 
@@ -94,33 +107,17 @@ p {
 }
 
 strong {
-    font-weight: bold;
+    font-weight: buld;
 }
 
-ol {
+ul {
     line-height: 2;
     padding: 0.5rem;
 }
 
-ol li {
+ul li {
     list-style-type: none;
     counter-increment: item;
-}
-
-ol li:before {
-    content: counter(item);
-    display: inline-block;
-    width: 12px;
-    height: 20px;
-    font-family: "Syne Mono", cursive;
-    margin-right: 5px;
-    background:url(../images/header.jpg);
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 140%;
-    padding: 0 8px 8px;
-    border-radius: 100%;
-    line-height: 1.3;
 }
 
 .fa {
@@ -170,9 +167,9 @@ a.formation__liens {
 }
 
 section {
-    background: #f1ede9;
+    background: #fff;
     border-radius: 1rem;
-    border: 0.1rem solid #dbd7eb;
+    
 }
 
 .description__perso__img {
@@ -182,18 +179,23 @@ section {
     margin: auto;
 }
 
+aside{
+    background: #29282d;
+}
 
 /*------Responsive-------*/
 
 @media only screen and (min-width: 740px) {
     aside{
         width: 30%;
-        background: #7d6461;  
     }
     section{
         margin: 2rem;
         position: relative;
         width: 70%;
+    }
+    .section-droite {
+        left: 10rem;
     }
     .wrapper{
         display: flex;
@@ -205,20 +207,24 @@ section {
         justify-content: space-between;
         order: 1;
     }
-    ol {
+    ul {
         height: 10rem;
     }
     .h2__section-droite{
         position: absolute;
         top: -2rem;
-        right: 8rem;
-        width: 70%;
+        left: 1rem;
+        width: 100%;
+        z-index: -1;
+        height: 10rem;
     }
     .h2__section-gauche {
-        top: -2rem;
-        left: -2rem;
         position: absolute;
-        width: 70%;
+        top: -2rem;
+        right: 1rem;
+        width: 100%;
+        z-index: -1;
+        height: 10rem;
     }
     #description__perso {
         margin: 1rem auto;
@@ -231,7 +237,7 @@ Anthracite #29282d
 gris clair #f1ede9
 Violet bleu #56569d
 Turquoise #36D7B7
-
+url(../images/header.jpg);
 
 */
 
