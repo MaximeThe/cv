@@ -1,6 +1,7 @@
 body {
     font-family: "Syne Mono", cursive;
     line-height: 1.2em;
+    background: #f1ede9;
 }
 .theme-dark {
     background:#29282d;
@@ -11,7 +12,7 @@ body {
     font-size: 1.2rem;
     margin: 0.2rem;
     border: 0.1rem solid #000000;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     background: #fff;
 }
 .fa-fade{
@@ -30,6 +31,15 @@ body {
     color: #000000 !important;
 }
 
+.fa-circle-taupe{
+    color: #7d6461 !important;
+}
+.fa-circle-violet{
+    color: #56569d !important;
+}
+.fa-circle-turquoise{
+    color: #36D7B7!important;
+}
 .wrapper {
     width: 90%;
     margin: auto;
@@ -38,12 +48,16 @@ body {
     position: fixed;
 
   }
-#navBar{
-    width: 100%;
-    background: #29282d;
-    text-align: right;
-    color: #fff;
+#navBar{  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    background: #fff;
     z-index: 999;
+    opacity: 97%;
+}
+#navBarThemeBtn {
+    display: inline-flex;
 }
 
 
@@ -85,7 +99,7 @@ header {
 
 ul#header__description__social__nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -94,7 +108,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-radius: 1rem;
     padding: 0.2rem;
     background:#29282d;
@@ -162,8 +176,8 @@ a.formation__liens {
 
 #description__perso{
     text-align: center;
-    border-bottom: 0.1rem solid #979b9e;
-    padding-top: 2rem;
+    background: none;
+    color: #fff;
 }
 
 section {
@@ -181,6 +195,11 @@ section {
 
 aside{
     background: #29282d;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
 }
 
 /*------Responsive-------*/
@@ -188,6 +207,7 @@ aside{
 @media only screen and (min-width: 740px) {
     aside{
         width: 30%;
+        height: 120vh;
     }
     section{
         margin: 2rem;
@@ -195,7 +215,7 @@ aside{
         width: 70%;
     }
     .section-droite {
-        left: 10rem;
+        left: 2rem;
     }
     .wrapper{
         display: flex;
@@ -207,7 +227,7 @@ aside{
         justify-content: space-between;
         order: 1;
     }
-    ul {
+    .section-droite > ul, .section-gauche > ul {
         height: 10rem;
     }
     .h2__section-droite{
