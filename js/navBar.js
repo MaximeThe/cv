@@ -1,10 +1,11 @@
 const navBar ={
     
     init: function (){
-        const header = document.querySelector("#navBar");
-        header.addEventListener("scroll", navBar.scroll);
+        
+        window.addEventListener("scroll", navBar.scroll);
     },
-    scroll:  function () {
+    scroll:  function (event) {
+        const header = document.querySelector("#navBar");
         const sticky = header.offsetTop;
         if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
