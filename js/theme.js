@@ -28,14 +28,14 @@ changeColorTheme: function (colorName) {
     let darkTheme;
      if (theme.classList.contains("theme-dark")) { // Pas de thème         
       theme.classList.remove("theme-dark");
-      icon.classList.remove("fa-sun");
-      icon.classList.add("fa-moon");
+      icon.classList.remove("fa-toggle-on");
+      icon.classList.add("fa-toggle-off");
       darkTheme = false;
 
      } else { // si y'a pas 'theme-dark' 
          theme.classList.add("theme-dark");
-         icon.classList.remove("fa-moon");
-         icon.classList.add("fa-sun");
+         icon.classList.remove("fa-toggle-off");
+         icon.classList.add("fa-toggle-on");
          darkTheme = true;
          
      };
