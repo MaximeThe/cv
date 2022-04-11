@@ -3,6 +3,7 @@ const app = {// module global
     init: function () {
         theme.init();
         navBar.init();
+        sectionAnimation.init();
     },
 };
 

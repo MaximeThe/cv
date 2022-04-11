@@ -4,7 +4,7 @@ const navBar ={
         
         window.addEventListener("scroll", navBar.handleScroll);
     },
-    handleScroll:  function (event) {
+    handleScroll:  function () {
         const header = document.querySelector("#navBar");
         const sticky = header.offsetTop;
         if (window.pageYOffset > sticky) {
