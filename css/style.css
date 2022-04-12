@@ -82,16 +82,6 @@ i#iconTheme {
     background: #fff;
 }
 
-.fa-circle-taupe{
-    color: #7d6461 !important;
-}
-.fa-circle-violet{
-    color: #56569d !important;
-}
-.fa-circle-turquoise{
-    color: #36D7B7!important;
-}
-
 .fa {
     padding: 0.1rem;
     width: 2rem;
@@ -135,13 +125,6 @@ h1 {
     font-size: 1.5rem;
 }
 
-h2 {
-    font-size: 1.2em;
-    border-radius: 1rem;
-    padding: 0.2rem;
-    background:#29282d;
-    color: #FFFFFF;
-}
 
 p {
     margin-bottom: 1em;
@@ -191,11 +174,17 @@ section {
 /* ----Aside---- */
 aside{
     background: #29282d;
+    color: #fff;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
+}
+/*----Footer----*/
+footer > ul {
+    display: flex;
+    justify-content: center;
 }
 
 /*----Responsive-----*/
@@ -226,27 +215,9 @@ aside{
     .section-droite > ul, .section-gauche > ul {
         height: 10rem;
     }
-    .h2__section-droite{
-        position: absolute;
-        top: -2rem;
-        left: 1rem;
-        width: 100%;
-        z-index: -1;
-        height: 10rem;
-    }
-    .h2__section-gauche {
-        position: absolute;
-        top: -2rem;
-        right: 1rem;
-        width: 100%;
-        z-index: -1;
-        height: 10rem;
-    }
-    #description__perso {
-        margin: 1rem auto;
-    }
 
 }
+
 /* Colors thème
 Taupe rouge #7d6461
 Anthracite #29282d
