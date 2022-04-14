@@ -74,13 +74,6 @@ i#iconTheme {
     
 }
 /* ----Icon---- */
-.fa-solid, .fas {
-    font-size: 1.2rem;
-    margin: 0.2rem;
-    border: 0.1rem solid #29282d;
-    border-radius: 0.5rem;
-    background: #fff;
-}
 
 .fa {
     padding: 0.1rem;
@@ -159,12 +152,6 @@ a.formation__liens {
     color: #fff;
 }
 
-section {
-    background: #fff;
-    border-radius: 1rem;
-    
-}
-
 .description__perso__img {
     max-width: 100%;
     display: block;
@@ -179,17 +166,53 @@ aside{
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 /*----Footer----*/
 footer > ul {
     display: flex;
     justify-content: center;
 }
+/*----Accordion----*/
+.accordion-button:not(.collapsed)::after{
+    background-image: none !important;
+    text-decoration: none;
+    font-family: FontAwesome;
+    content:"\f067" !important;
+  }
+
+.accordion-button::after {
+    background-image:none  !important;
+    font-family: FontAwesome;
+    content:"\f068" !important;
+    text-decoration: none;
+    color: #fff;
+  }
+.accordion-button, .accordion-item {
+    background-color: #29282d !important;
+  }
+.accordion-button {
+    color: #fff !important;
+  }
+.accordion-body {
+    color: #fff !important;
+    opacity: 0.5;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: #fff !important;
+  }
+  .carousel-inner {
+    text-align: center !important;
+}
 
 /*----Responsive-----*/
 
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 768px) {
     aside{
         width: 30%;
         height: 120vh;

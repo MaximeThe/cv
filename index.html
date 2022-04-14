@@ -29,7 +29,7 @@
 			</p>
 		</header>
 	
-		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 			<div class="container-fluid " >
 				<button type="button" class="navbar-toggler Flex item " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 					<span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
          
 				
 				<!--Liste Expériences-->
-				<section id="experience" class="col-sm-12" >
+				<section id="experience">
 					<h2>Expériences professionnelles</h2>
 					<ul >
 						<li>
@@ -71,7 +71,7 @@
 					</ul>
 				</section>
 				<!--Liste Formation-->
-				<section id="formation" class="col-sm-12">
+				<section id="formation">
 					<h2>Formation</h2>
 					<ul>
 						<li >
@@ -84,27 +84,95 @@
 							</p>
 						</li>
 					</ul>
+          
 				</section>
 				<!--Liste Compétences-->
 			
 			</main>
                 <!--Description Page-->
 				<aside id="propos">
-					<!-- Image désactiver-->
-					<!--
-					<img src="./images/description.jpg" alt="description" class="description__perso__img">
-					-->
-					
-					<p>
-						Après 15 ans à créer blogs et sites web, sans diplôme en poche, je me reconvertis pour devenir développeur à Marseille.
-					</p>
-
-					<section class="col-sm-12">
-						<h2 >Compétences</h2>
-						<ul>
-							<li></li>
-							<li></li>
-						</ul>
+					<section>
+						<!-- Image désactiver-->
+						<!--
+						<img src="./images/description.jpg" alt="description" class="description__perso__img">
+						-->
+						
+						
+					</section>
+					<section>
+            <div class="accordion  accordion-flush " id="accordionFlushExample">
+              <div class="accordion-item ">
+                <h2 class="accordion-header bg-transparent text-white " id="flush-headingOne">
+                  <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Profil
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p>
+                    Après 15 ans à créer blogs et sites web, sans diplôme en poche, je me reconvertis pour devenir développeur à Marseille.
+                  </p></div>
+                </div>
+              </div>
+              <div class="accordion-item ">
+                <h2 class="accordion-header  data-parent" id="flush-headingTwo">
+                  <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Compétences
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body accordion-list">
+                    <!-- Carousel -->
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class=" h-100  d-block ">
+                            <p>HTML/CSS</p>
+                            <i class="fa-brands fa-html5"></i>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class=" h-100  d-block ">
+                            <p>PHP</p>
+                            <i class="fa-brands fa-php"></i>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class=" h-100  d-block ">
+                            <p>JavaScript</p>
+                            <i class="fa-brands fa-js"></i>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class=" h-100  d-block ">
+                            <p>SQL</p>
+                            <i class="fa-solid fa-database"></i>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Centre d'intérêt
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
 					</section>
 				</aside>
 			</div>
