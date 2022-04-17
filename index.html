@@ -7,12 +7,13 @@
 		<title>Cv Maxime Theneau</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
 
 		<!--
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
@@ -29,7 +30,7 @@
 			</p>
 		</header>
 	
-		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<nav class="navbar navbar-expand-md navbar-transparent sticky-top">
 			<div class="container-fluid " >
 				<button type="button" class="navbar-toggler Flex item " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 					<i class="fa-solid fa-bars"></i>
@@ -56,10 +57,96 @@
 				<!--Expériences-->
 				<section id="experience">
 					
-         	 		<ul class="realisation position-relative">
+         	 		<div class="realisation card position-relative">
 						<h2 class="title-realisation">Réalisation</h2>
-						  <li ><p><strong>Premier arrivé</strong>, premier servi ! <time datetime="2022-09">Septembre 2022</time></p></li>
-					</ul>
+						<div class="row">
+							<!--CupPlante-->
+							<div class="col-sm-6">
+							  <div class="card bg-transparent">
+								<div class="card-body position-relative hover-mask">
+									<h2 class="title-realisation">CupPlante</h2>
+									<a href="#" title="">
+										<img src="images/ecran.jpg" alt="O'clock"/>
+											<button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#cupplanteModal">
+												<i class="fa-solid fa-circle-info"></i>
+											</button>
+									</a>
+						
+									<!-- Modal -->
+									<div class="modal fade" id="cupplanteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="cupplanteModalLabel">CupPlante</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+											...
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+							<!--Une taupe Chez Vous-->
+							<div class="col-sm-6">
+									<div class="card bg-transparent hover-mask">
+									  <div class="card-body">
+										  <h2 class="title-realisation">Une Taupe Chez Vous</h2>
+										  <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal" title="">
+											<img src="images/taupe.jpg" alt="O'clock"/>
+												<button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#taupeModal">
+													<i class="fa-solid fa-circle-info"></i>
+												</button>
+											</a>
+										  <!-- Modal -->
+										  <div class="modal fade" id="taupeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											  <div class="modal-dialog">
+											  <div class="modal-content">
+												  <div class="modal-header">
+												  <h5 class="modal-title" id="taupeModalLabel">Une Taupe Chez Vous</h5>
+												  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												  </div>
+												  <div class="modal-body">
+												  ...
+												  </div>
+											  </div>
+											  </div>
+										  </div>
+									  </div>
+									</div>
+							</div>
+							<!--Vidéo-->
+							<div class="col-sm-6">
+								<div class="card bg-transparent position-relative hover-mask">
+									<h2 class="title-realisation ">Vidéo</h2>
+								  	<div class="card-body d-flex justify-content-center">
+									  <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal" title="">
+										<img src="images/taupe.jpg" alt="video"/>
+											<button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#videoModal">
+												<i class="fa-solid fa-circle-info"></i>
+											</button>
+										</a>
+									  <!-- Modal -->
+									  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										  <div class="modal-dialog">
+										  <div class="modal-content">
+											  <div class="modal-header">
+											  <h5 class="modal-title" id="videoModalLabel">Vidéo</h5>
+											  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											  </div>
+											  <div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/VlaaeLxRsXE?controls=0&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											  </div>
+										  </div>
+										  </div>
+									  </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 				<!--Liste Formation-->
 				<section id="formation">	
@@ -71,10 +158,10 @@
 			</main>
                 <!--Description Page-->
 				<aside id="propos">
-					<div class="accordion  accordion-flush " id="accordionFlushExample">
-						<div class="accordion-item ">
+					<div class="accordion bg-transparent  accordion-flush " id="accordionFlushExample">
+						<div class="accordion-item bg-transparent ">
 							<h2 class="accordion-header bg-transparent text-white " id="flush-headingOne">
-							<button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							<button class="accordion-button bg-transparent collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
 								<p class="accordion-text">Profil</p>
 							</button>
 							</h2>
@@ -97,9 +184,9 @@
 							</div>
 							</div>
 						</div>
-						<div class="accordion-item ">
-							<h2 class="accordion-header  data-parent" id="flush-headingTwo">
-							<button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						<div class="accordion-item  bg-transparent">
+							<h2 class="accordion-header bg-transparent data-parent" id="flush-headingTwo">
+							<button class="accordion-button bg-transparent collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 								<p class="accordion-text">Compétences</p>
 							</button>
 							</h2>
@@ -147,9 +234,9 @@
 							</div>
 							</div>
 						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="flush-headingThree">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+						<div class="accordion-item bg-transparent">
+							<h2 class="accordion-header bg-transparent" id="flush-headingThree">
+							<button class="accordion-button bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 								<p class="accordion-text">Centre d'intérêt</p>
 							</button>
 							</h2>
@@ -190,16 +277,59 @@
 						</div>
 					</div>
 				</aside>
+
+			<!-- <footer id="contact" class="container-fluid">
+				<div class="container py-4">
+
+					
+					<form id="contactForm">
+				  
+					  
+					  <div class="mb-3">
+						<label class="form-label" for="name">Name</label>
+						<input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+						<div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+					  </div>
+				  
+					  
+					  <div class="mb-3">
+						<label class="form-label" for="emailAddress">Email Address</label>
+						<input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+						<div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+						<div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+					  </div>
+				  
+					  
+					  <div class="mb-3">
+						<label class="form-label" for="message">Message</label>
+						<textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+						<div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+					  </div>
+				  
+					  
+					  <div class="d-none" id="submitSuccessMessage">
+						<div class="text-center mb-3">Form submission successful!</div>
+					  </div>
+				  
+					  
+					  <div class="d-none" id="submitErrorMessage">
+						<div class="text-center text-danger mb-3">Error sending message!</div>
+					  </div>
+				  
+					  
+					  <div class="d-grid">
+						<button class="btn btn-primary btn-lg" type="submit">Submit</button>
+					  </div>
+				  
+					</form>
+				  
+				  </div>
+			</footer>  -->
 		</div>
-			<footer id="contact" class="container-fluid">
-				<p></p>
-			</footer>
-			
-		
+		<!--JS-->
 		<script src="js/theme.js"></script>
-		<script src="js/navBar.js"></script>
-		<script src="js/sectionAnimation.js"></script>
 		<script src="js/app.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		 <!-- Bootstrap 5 core JavaScript -->
+		 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
