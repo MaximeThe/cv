@@ -5,22 +5,7 @@ const theme = {
     buttonTheme.addEventListener("click", theme.handleTheme);
     theme.applyLocalStorageTheme();
     
-    //Theme.Btn
-    const colorBtnList = document.querySelectorAll(".theme-button");
-    for (let colorbtnElmt of colorBtnList) {
-      colorbtnElmt.addEventListener("click", theme.handleThemeColorClick);
-  }
   },
-handleThemeColorClick: function (event) {
-  const idColor = event.currentTarget.id;
-  theme.changeColorTheme(idColor);
-},
-changeColorTheme: function (colorName) {
-
-  document.body.classList.remove("theme-red", "theme-green", "theme-blue");
-  document.body.add(colorName);
-
-},
   handleTheme: function(event) {
     event.preventDefault();
     const theme = document.querySelector("body");
@@ -39,22 +24,16 @@ changeColorTheme: function (colorName) {
          darkTheme = true;
          
      };
-     theme.setThemeToLocalStorage(darkTheme);
-     
   },
   setThemeToLocalStorage: function (darkTheme) {//entrée dans local storage 
-    const stringifyDarkTheme = JSON.stringify(darkThemeA);
-    localStorage.setItem("dark_theme", stringifyDarkTheme);
+    const stringifyDarkTheme = JSON.stringify(darkTheme);
+    localStorage.setItem("darkTheme", stringifyDarkTheme);
   },
   applyLocalStorageTheme: function () {//récupère l'entrée 'dark_theme' dans le local storage 
-      const StringifyIsDark = localStorage.getItem("dark_theme");
+      const StringifyIsDark = localStorage.getItem("darkTheme");
       const isDark = JSON.parse(StringifyIsDark); 
       if (isDark) {
           theme.handleTheme();
-      }
-      const colorTheme = localStorage.getItem("colorTheme");
-      if (colorTheme) {
-          theme.changeColorTheme(colorTheme);
       }
   },
   

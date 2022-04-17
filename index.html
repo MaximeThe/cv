@@ -38,11 +38,8 @@
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<div class="navbar-nav">
 						<a href="#" class="nav-item nav-link active"><i class="fa fa-house-chimney"></i></a>
-						<a href="#propos" class="nav-item nav-link col-xs">Á propos</a>
 						<a href="#experience" class="nav-item nav-link">Réalisation</a>
 						<a href="#formation" class="nav-item nav-link">Formation</a>
-						
-						<a href="#contact" class="nav-item nav-link">Contact</a>
 					</div>
 					<div class="navbar-nav ms-auto">
 						<a href="#" class="nav-item nav-link"><i id="iconTheme" class="fa  fa-toggle-off"></i></a>
@@ -59,22 +56,22 @@
 					
          	 		<div class="realisation card position-relative">
 						<h2 class="title-realisation">Réalisation</h2>
-						<div class="row">
 							<!--CupPlante-->
-							<div class="col-sm-6">
-							  <div class="card bg-transparent">
-								<div class="card-body position-relative hover-mask">
-									<h2 class="title-realisation">CupPlante</h2>
-									<a href="#" title="">
-										<img src="images/ecran.jpg" alt="O'clock"/>
-											<button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#cupplanteModal">
-												<i class="fa-solid fa-circle-info"></i>
-											</button>
-									</a>
-						
+							<div class="col-sm-6 position-relative">
+									<h3 class="title-realisation">CupPlante</h3>
+									<div class="item-overlay animated wow fadeIn">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#cupplanteModal" title="">
+											<img src="images/ecran.jpg" alt="O'clock"/>
+											<div class="overlay fade-overlay">			
+												<button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#cupplanteModal">
+													<i class="fa-solid fa-circle-info fa-3x"></i>
+												</button>
+											</div>
+										</a>
+									</div>						
 									<!-- Modal -->
 									<div class="modal fade" id="cupplanteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
+										<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
 											<div class="modal-header">
 											<h5 class="modal-title" id="cupplanteModalLabel">CupPlante</h5>
@@ -86,23 +83,23 @@
 										</div>
 										</div>
 									</div>
-								</div>
-							  </div>
 							</div>
 							<!--Une taupe Chez Vous-->
-							<div class="col-sm-6">
-									<div class="card bg-transparent hover-mask">
-									  <div class="card-body">
-										  <h2 class="title-realisation">Une Taupe Chez Vous</h2>
-										  <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal" title="">
-											<img src="images/taupe.jpg" alt="O'clock"/>
-												<button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#taupeModal">
-													<i class="fa-solid fa-circle-info"></i>
-												</button>
-											</a>
+							<div class="col-sm-6 position-relative">
+								<h3 class="title-realisation">Une Taupe Chez Vous</h3>
+								<div class="item-overlay animated wow fadeIn">
+									<a href="#" data-bs-toggle="modal" data-bs-target="#taupeModal" title="">
+										<img src="images/taupe.jpg" alt="Une Taupe Chez Vous"/>
+										<div class="overlay fade-overlay">			
+											<button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#taupeModal">
+												<i class="fa-solid fa-circle-info fa-3x"></i>
+											</button>
+										</div>
+									</a>
+								</div>
 										  <!-- Modal -->
 										  <div class="modal fade" id="taupeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-											  <div class="modal-dialog">
+											  <div class="modal-dialog modal-dialog-centered">
 											  <div class="modal-content">
 												  <div class="modal-header">
 												  <h5 class="modal-title" id="taupeModalLabel">Une Taupe Chez Vous</h5>
@@ -114,23 +111,24 @@
 											  </div>
 											  </div>
 										  </div>
-									  </div>
-									</div>
+
 							</div>
 							<!--Vidéo-->
-							<div class="col-sm-6">
-								<div class="card bg-transparent position-relative hover-mask">
-									<h2 class="title-realisation ">Vidéo</h2>
-								  	<div class="card-body d-flex justify-content-center">
-									  <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal" title="">
-										<img src="images/taupe.jpg" alt="video"/>
+							<div class="col-sm-6 position-relative">
+								<h2 class="title-realisation ">Vidéo</h2>
+								<div class="item-overlay animated wow fadeIn">
+									<a href="#" data-bs-toggle="modal" data-bs-target="#videoModal" title="">
+										<img src="images/taupe.jpg" alt="Une Taupe Chez Vous"/>
+										<div class="overlay fade-overlay">			
 											<button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#videoModal">
-												<i class="fa-solid fa-circle-info"></i>
+												<i class="fa-solid fa-circle-info fa-3x"></i>
 											</button>
-										</a>
+										</div>
+									</a>
+								</div>
 									  <!-- Modal -->
 									  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-										  <div class="modal-dialog">
+										  <div class="modal-dialog modal-dialog-centered">
 										  <div class="modal-content">
 											  <div class="modal-header">
 											  <h5 class="modal-title" id="videoModalLabel">Vidéo</h5>
@@ -142,10 +140,7 @@
 										  </div>
 										  </div>
 									  </div>
-								  </div>
-								</div>
 							</div>
-						</div>
 					</div>
 				</section>
 				<!--Liste Formation-->
