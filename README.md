@@ -1,8 +1,10 @@
 ## Bonjour à tous ! :wave:
 
-<pre><code>const  MaximeThe = {
+<pre>const  MaximeThe = {
   nom: "Maxime" | "Theneau",
   code: [Javascript, HTML, CSS, PHP, SQL],
   interet: [graffiti, Bitcoin, cryptomonnaie],
-}
-</code></pre>
+}</pre>
+![mail](images/github/linkedin-brands.svg)
+![Twitter](images/github/twitter-brands.svg)
+![linkedin](envelope-open-text-solid.svg)
