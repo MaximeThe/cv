@@ -60,7 +60,7 @@ i#iconTheme {
 .navbar>.container-fluid {
        justify-content: center !important;
 }
-  
+
 /* ----Thème---- */
 .theme-dark {
     background:#29282d;
@@ -354,7 +354,11 @@ img.card-img-top:hover .image {
         display: flex;
         flex-wrap: wrap;
     }
-    
+    a.nav-item.nav-link.contact {
+        display: none;
+    }t {
+        display: none;
+    }
 }
 
 /* Colors thème
