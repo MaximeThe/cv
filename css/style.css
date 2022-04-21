@@ -60,7 +60,7 @@ i#iconTheme {
 .navbar>.container-fluid {
        justify-content: center !important;
 }
-  
+
 /* ----Thème---- */
 .theme-dark {
     background:#29282d;
@@ -80,7 +80,7 @@ ul#competences {
 /* ----Page---- */
 .wrapper {
     width: 90%;
-    margin:4rem auto;
+    margin:4rem auto 0;
 }
 main a{
     color: #29282d !important;
@@ -91,18 +91,17 @@ main {
     justify-content: space-evenly;
     align-items: center;
 }
-section{
-    width: 70%;
+section#experience, section#formation {
+    width: 90%;
+    
 }
+section#formation{
+    margin: 3rem 0 3rem;
+}
+
 ul li {
     list-style-type: none;
     counter-increment: item;
-}
-ul.realisation {
-    border: solid #000 0.1rem;
-    border-radius: 1rem;
-
-    padding: 1rem;
 }
 .title-realisation {
     color: #fff;
@@ -284,82 +283,49 @@ img.card-img-top:hover .image {
   .accordion-body:hover {
     opacity: 1 !important;
   }
-/*ZoomIn Hover-Mask Effect*/
-.hover-mask a {
+/* Hover-Overlay Effect*/
+#experience img {
+    max-width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 8rem;
+    position: relative;
+    margin: 0rem auto 2rem;
+}
+.overlay {
+    margin: 0rem auto 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(86 86 157 / 70%);
+    overflow: hidden;
+    max-width: 8rem;
+    border-radius: 100%;
+    height: 8rem;
+    transition: .5s ease;
+}
+.item-overlay {
     position: relative;
     overflow: hidden;
-  }
-.hover-mask img {
-    width: 5rem;
-    height: 5rem;
-    border-radius:100% ;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .hover-mask:hover img {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  .hover-mask a button {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    -ms-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
+}
+.item-overlay:hover .bottom-overlay {
+  top: 0;
+}
+.fade-overlay {
     opacity: 0;
-    color: #000;
-  }
-  .hover-mask:hover a button {
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
-  .hover-mask button .fa- {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    color: #000;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    -ms-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  .hover-mask:hover button {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    -ms-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
-    filter: alpha(opacity=1);
-    opacity: 1;
-  }
+}
+
+.item-overlay:hover .fade-overlay {
+  opacity: 1;
+}
+
 
 /*----Responsive-----*/
 
@@ -368,12 +334,10 @@ img.card-img-top:hover .image {
         width: 30%;
         height: 120vh;
     }
-    section{
-        margin: 2rem;        
+    section, section#formation{
+        margin: 2rem 0 3rem 3rem;        
     }
-    .section-droite {
-        left: 2rem;
-    }
+
     .wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -385,10 +349,16 @@ img.card-img-top:hover .image {
         justify-content: space-between;
         order: 1;
     }
-    .section-droite > ul, .section-gauche > ul {
-        height: 10rem;
-    }
 
+    .flex-responsives{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    a.nav-item.nav-link.contact {
+        display: none;
+    }t {
+        display: none;
+    }
 }
 
 /* Colors thème

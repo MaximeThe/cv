@@ -5,27 +5,13 @@ const theme = {
     buttonTheme.addEventListener("click", theme.handleTheme);
     theme.applyLocalStorageTheme();
     
-    //Theme.Btn
-    const colorBtnList = document.querySelectorAll(".theme-button");
-    for (let colorbtnElmt of colorBtnList) {
-      colorbtnElmt.addEventListener("click", theme.handleThemeColorClick);
-  }
   },
-handleThemeColorClick: function (event) {
-  const idColor = event.currentTarget.id;
-  theme.changeColorTheme(idColor);
-},
-changeColorTheme: function (colorName) {
-
-  document.body.classList.remove("theme-red", "theme-green", "theme-blue");
-  document.body.add(colorName);
-
-},
-  handleTheme: function(event) {
-    event.preventDefault();
+  handleTheme: function() {
+    
+    let darkTheme;
     const theme = document.querySelector("body");
     const icon = document.querySelector("#iconTheme");
-    let darkTheme;
+    
      if (theme.classList.contains("theme-dark")) { // Pas de thème         
       theme.classList.remove("theme-dark");
       icon.classList.remove("fa-toggle-on");
@@ -38,24 +24,27 @@ changeColorTheme: function (colorName) {
          icon.classList.add("fa-toggle-on");
          darkTheme = true;
          
-     };
+     }
      theme.setThemeToLocalStorage(darkTheme);
-     
   },
-  setThemeToLocalStorage: function (darkTheme) {//entrée dans local storage 
-    const stringifyDarkTheme = JSON.stringify(darkThemeA);
+  setThemeToLocalStorage: function (darkTheme) {
+    const stringifyDarkTheme = JSON.stringify(darkTheme);
     localStorage.setItem("dark_theme", stringifyDarkTheme);
-  },
-  applyLocalStorageTheme: function () {//récupère l'entrée 'dark_theme' dans le local storage 
-      const StringifyIsDark = localStorage.getItem("dark_theme");
-      const isDark = JSON.parse(StringifyIsDark); 
-      if (isDark) {
-          theme.handleTheme();
-      }
-      const colorTheme = localStorage.getItem("colorTheme");
-      if (colorTheme) {
-          theme.changeColorTheme(colorTheme);
-      }
-  },
-  
-}
+},
+ applyLocalStorageTheme: function () {
+        // on récupère l'entrée 'dark_theme' dans le local storage si elle existe
+        const StringifyIsDark = localStorage.getItem("dark_theme");
+
+        // typeof StringifyIsDark => STRING
+        const isDark = JSON.parse(StringifyIsDark); // on traduit le JSON en type JS (ici booléen)
+        // typeof isDark => BOOLEAN
+
+        // si la valeur de isDark est true, on change le thème
+        if (isDark) {
+            theme.handleTheme();
+        }
+
+
+      
+    },
+};
