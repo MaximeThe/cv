@@ -16,18 +16,26 @@ header {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
-
-#top__head__logo {
-    background-image: url(../images/logo.jpg);
-    background-size: cover;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    order: -1;
-    margin: 0.5rem 0 0 0;
+header .header__video{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+  }
+  
+.header__text {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
+i.fa-solid.fa-angles-down.fa-bounce-start-scale-x.fa-beat-fade.fa-3x {
+    color: rgb(255 255 255 / 50%);
+}
 #navBar{  
     display: flex;
     justify-content: flex-end;
