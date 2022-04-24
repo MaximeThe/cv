@@ -1,12 +1,18 @@
 body {
-    font-family: "Syne Mono", cursive !important;
+    font-family: 'Major Mono Display', monospace !important;
     line-height: 1.2em;
     background: #f1ede9;
+}
+p, a{
+    font-family: 'Nunito', sans-serif !important;
+    text-decoration: none !important;
 }
 a{
     color: #fff !important;
 }
-
+i.fa-solid, .formation__liens {
+    padding:0 1rem 0;
+}
 /* ----header---- */
 
 header {
@@ -68,7 +74,10 @@ i#iconTheme {
 .navbar>.container-fluid {
        justify-content: center !important;
 }
+.navbar::before{
+    opacity: 1 !important;
 
+}
 /* ----Thème---- */
 .theme-dark {
     background:#29282d;
@@ -127,10 +136,14 @@ img.competence__img {
 .competence__img {
     border-radius: 100%;
 } 
+.col-md-5.position-relative {
+    border: 0.1rem solid rgb(41 40 45 / 5%);
+    margin: 1rem;
+    border-radius: 1rem;
+}
 /* ----titre/texte---- */
 h1 {
-    padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 5rem !important;
 }
 
 
@@ -184,9 +197,6 @@ aside{
 
 }
 
-aside i.fa-solid{
- padding: 1rem;
-}
 h3 {
     border-top: solid #fff 0.1rem;
     padding: 1rem;
@@ -264,7 +274,7 @@ header::before, .navbar::before, aside::before, .title-realisation::before{
 
 
 /*----Hover----*/
-.nav-link:hover, i.fa:hover, .navbar-toggler-icon:hover, .fa-bars:hover, i.fa-solid:hover header, .list-contact a:hover, #carouselInteretCaptions i.fa-solid:hover, main a:hover, ul.list-social:hover{
+.nav-link:hover, i.fa:hover, .navbar-toggler-icon:hover, .fa-bars:hover, i.fa-solid:hover header, .list-contact a:hover, #carouselInteretCaptions i.fa-solid:hover, main a:hover, ul.list-social:hover, .accordion-text:hover, .accordion-text::after:hover{
     transform: scale(1.05) !important;
     color: #56569d !important;
 }
@@ -277,10 +287,12 @@ ul.list-contact {
     font-family: FontAwesome;
     content:"\f068" !important;
 }
-.fa-bars, i.fa, i.fa-solid footer,  #carouselInteretCaptions i.fa-solid, .nav-link{
+.fa-bars, i.fa, i.fa-solid footer,  #carouselInteretCaptions i.fa-solid, .nav-link, .accordion-text, .accordion-text::after, .wrapper h2 {
     color: #36D7B7 !important;
 }
-
+.accordion-text, .accordion-text::after{
+    font-family: 'Major Mono Display', monospace !important; 
+}
 img.card-img-top:hover .image {
     opacity: 0.3;
   }
@@ -361,6 +373,7 @@ img.card-img-top:hover .image {
     .flex-responsives{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     a.nav-item.nav-link.contact {
         display: none;
