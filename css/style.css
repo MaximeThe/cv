@@ -71,12 +71,19 @@ i#iconTheme {
     top: 0;
     width: 100%;
 }
+nav.navbar.navbar-expand-md.navbar-transparent.sticky-top{
+    background: #29282d !important;
+}
 .navbar>.container-fluid {
        justify-content: center !important;
 }
 .navbar::before{
     opacity: 1 !important;
 
+}
+a.nav-item.nav-link {
+    font-family: 'Major Mono Display', monospace !important;  ;
+    font-weight: bold;
 }
 /* ----Thème---- */
 .theme-dark {
@@ -164,10 +171,6 @@ time {
     display: inline-block;
 }
 
-span.text__syne {
-    font-family: 'Syne Mono';
-    font-weight: bold;
-}
 
 a.formation__liens {
     text-decoration: none;
@@ -250,8 +253,11 @@ button:not(.collapsed) .accordion-text, .accordion-button:not(.collapsed)::after
   .carousel-inner {
     text-align: center !important;
 }
+h2.accordion-header {
+    background: rgba(255, 255, 255, 0.07) !important;
+}
 /*----::before----*/
-header, .navbar-expand-md, aside, .title-realisation{
+header, .navbar-expand-md, aside, .title-realisation, .navbar::after{
     background: rgb(41 40 45 / 80%) !important;
     position: relative;
 }
@@ -262,7 +268,7 @@ header::before, .navbar::before, aside::before, .title-realisation::before{
     height: 100%;
     background: url(../images/header.jpg);
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.3 !important;
     top: 0;
     left: 0;
     z-index: -1;
@@ -274,7 +280,7 @@ header::before, .navbar::before, aside::before, .title-realisation::before{
 
 
 /*----Hover----*/
-.nav-link:hover, i.fa:hover, .navbar-toggler-icon:hover, .fa-bars:hover, i.fa-solid:hover header, .list-contact a:hover, #carouselInteretCaptions i.fa-solid:hover, main a:hover, ul.list-social:hover, .accordion-text:hover, .accordion-text::after:hover{
+.nav-link:hover, i.fa:hover, .navbar-toggler-icon:hover, .fa-bars:hover, i.fa-solid:hover header, .list-contact a:hover, #carouselInteretCaptions i.fa-solid:hover, main a:hover, ul.list-social:hover, h2.accordion-header:hover, .accordion-text:hover, button:not(.collapsed) .accordion-text:hover, i.fa-solid.fa-angle-down.fa-bounce.fa-3x:hover{
     transform: scale(1.05) !important;
     color: #56569d !important;
 }
@@ -287,8 +293,11 @@ ul.list-contact {
     font-family: FontAwesome;
     content:"\f068" !important;
 }
-.fa-bars, i.fa, i.fa-solid footer,  #carouselInteretCaptions i.fa-solid, .nav-link, .accordion-text, .accordion-text::after, .wrapper h2 {
+.fa-bars, i.fa, i.fa-solid footer,  #carouselInteretCaptions i.fa-solid, .nav-link, .accordion-text, .accordion-text::after, .wrapper h2, i.fa-solid.fa-angle-down.fa-bounce.fa-3x  {
     color: #36D7B7 !important;
+}
+i.fa-solid.fa-angle-down.fa-bounce.fa-3x {
+    opacity: 0.3;
 }
 .accordion-text, .accordion-text::after{
     font-family: 'Major Mono Display', monospace !important; 
@@ -297,12 +306,16 @@ img.card-img-top:hover .image {
     opacity: 0.3;
   }
   
-  img.card-img-top:hover .middle {
+img.card-img-top:hover .middle {
     opacity: 1;
   }
-  .accordion-body:hover {
+.accordion-body:hover {
     opacity: 1 !important;
   }
+a.nav-item.nav-link:hover, .accordion-text:hover, i.fa-solid.fa-angle-down.fa-bounce.fa-3x{
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+}
 /* Hover-Overlay Effect*/
 #experience img {
     max-width: 8rem;
