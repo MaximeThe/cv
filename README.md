@@ -5,4 +5,3 @@
   <a href="https://twitter.com/maximethe" target="blank"><img src="images/github/twitter-brands.svg" alt="maximethe" height="30" width="30" /></a>
 <a href="mailto:maxime.t@maximemotivationplusplus.fr" target="blank"><img  src="images/github/a.svg" alt="theneau maxime" height="30" width="30" /></a>
 </p>
-## Formation
