@@ -1,7 +1,15 @@
-# Theneau Maxime
-<p align="center">
-  <a href="https://maximethe.github.io/" target="blank"><img  src="images/github/envelope-open-text-solid.svg" alt="maximethe" height="30" width="30" /></a>
-  <a href="https://linkedin.com/in/theneau maxime" target="blank"><img src="images/github/linkedin-brands.svg" alt="maximethe" height="30" width="30" /></a>
-  <a href="https://twitter.com/maximethe" target="blank"><img src="images/github/twitter-brands.svg" alt="maximethe" height="30" width="30" /></a>
-<a href="mailto:maxime.t@maximemotivationplusplus.fr" target="blank"><img  src="images/github/a.svg" alt="theneau maxime" height="30" width="30" /></a>
-</p>
+# Theneau Maxime Portfolio
+Portfolio Développeur Web à Marseille, réaliser en Mobile First intégralement en paralax avec React / React-Redux.
+
+## [Demo](https://maximethe.github.io)
+
+## Langages utilisés
+
+- React (18.1.0), React-Redux
+- JavaScript, JSX
+- SASS, SCSS
+- HTML5/CSS
+
+## Wireframe
+
+![Wireframe portfolio Theneau Maxime](docs/images/github/wireframe.jpg "Wireframe portfolio Theneau Maxime")
