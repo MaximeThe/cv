@@ -1,12 +1,11 @@
 // == Import
-import './styles.scss';
-import Header from '../Header';
+import './styles.css';
 
 // == Composant
 function App() {
   return (
     <div className="app">
-      <Header />
+      <h1>Composant : App</h1>
     </div>
   );
 }
