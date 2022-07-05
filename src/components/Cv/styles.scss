@@ -1,9 +1,12 @@
+html{
+
+  height: 100vh;
+  overflow-x: hidden;
+}
 .app {
-  width: 500px;
+
   margin: 1em auto;
   text-align: center;
+
 }
 
-.app img {
-  max-width: 150px;
-}
