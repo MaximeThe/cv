@@ -1,9 +1,12 @@
+import Description from './Description';
 import './style.scss';
+import Title from './Title';
 
 function Header() {
   return (
     <header className="header">
-      <h1 className="header-title">Maxime Theneau </h1>
+      <Title />
+      <Description />
     </header>
   );
 }
