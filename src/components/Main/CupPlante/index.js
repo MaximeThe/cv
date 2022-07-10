@@ -2,7 +2,7 @@ import './style.scss';
 
 function CupPlante() {
   return (
-    <p>hey</p>
+    <p className="cup">CupPlante</p>
   );
 }
 

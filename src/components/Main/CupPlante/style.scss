@@ -1,1 +1,10 @@
 @import '../../../styles/vars';
+.cup{
+  transform: translateX(66%);
+  animation: moveCup 12s linear infinite;
+}
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
