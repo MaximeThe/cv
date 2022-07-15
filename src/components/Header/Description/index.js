@@ -4,7 +4,7 @@ import './styles.scss';
 function Description() {
   return (
     <div className="fhhgf">
-      descrip
+      <h2>Profil</h2>
     </div>
   );
 }

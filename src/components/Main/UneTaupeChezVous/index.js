@@ -2,7 +2,11 @@ import './style.scss';
 
 function UneTaupeChezVous() {
   return (
-    <p>hey</p>
+    <div className="caption">
+      <div className="caption-taupe">
+        <h2 className="cup">Une Taupe Chez Vous</h2>
+      </div>
+    </div>
   );
 }
 
