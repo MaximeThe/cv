@@ -34,24 +34,3 @@
 .icon-linkedin:before {
   content: "\e903";
 }
-
-/* hover effect */
-.h-color{
-  transition: color 1s;
-}
-.h-color:hover{
-  color: #6868ac;
-  transition: color 1s;
-}
-.h-fx {
-  background: rgb(123, 123, 123, 0.2);
-  padding: 0.5em;
-  border-radius: 100%;
-  transition: all 1s;
-}
-.h-fx:hover {
-    background: #fff;
-    padding: 0.5em;
-    border-radius: 100%;
-    transition: all 1s;
-}

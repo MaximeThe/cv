@@ -5,6 +5,9 @@ function CupPlante() {
     <div className="caption">
       <div className="caption-CupPlante">
         <h2 className="cup">CupPlante</h2>
+        <p>
+          Site de e-commerce avec Prestashop.
+        </p>
       </div>
     </div>
   );

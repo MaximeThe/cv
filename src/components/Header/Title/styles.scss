@@ -1,19 +1,13 @@
-html{
 
-  height: 100vh;
-  overflow-x: hidden;
+.header{
+  background-image: url("../../../assets/image/fondCv.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain ;
+  display: block;
+  height: 150vh;
 }
-.app {
 
-  margin: 1em auto;
-  text-align: center;
-
-}
-.background{
-  background: url("../../../assets/image/fondCv.svg") no-repeat;
-  height: 153vh;
-  background-size: 100%;
-}
 .background-title{
   font-size: 2rem;
 }
