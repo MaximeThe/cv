@@ -3,9 +3,37 @@ html{
   height: 100vh;
   overflow-x: hidden;
 }
-.app {
 
 
-
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  box-sizing: none !important;
 }
 
+/* Add some content at the bottom of the video/page */
+.content {
+  background: rgba(0,0,0,.5);
+  color: #f1f1f1;
+  width: 100%;
+  top: 0;
+  height: 13rem;
+  text-align: center;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin-bottom: 0;
+}
