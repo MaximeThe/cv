@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cv Maxime Theneau</title>
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nunito:wght@200&display=swap" rel="stylesheet">
+      <!--
+         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+         -->
+      <!--Bootstrap v5.0.2 (https://getbootstrap.com/)-->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+ 
+      <!--Icon thème -->
+      <header>
+        <video  autoplay loop muted class="header__video">
+			<source src="video/theneau.mp4" type="video/mp4">
+		 </video> 
+		 <div class="header__text position-absolute">
+			<h1 >Maxime Theneau</h1>
+         <h2>#React</h2>
+			<a href="#wrapper"><i class="fa-solid fa-angle-down fa-bounce fa-3x"></i></a>
+		</div>
+      </header>
+      <nav class="navbar navbar-expand-md navbar-transparent sticky-top">
+         <div class="container-fluid " >
+            <button type="button" class="navbar-toggler Flex item " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <div class="navbar-nav">
+                  <a href="#" class="nav-item nav-link active"><i class="fa fa-house-chimney"></i></a>
+                  <a href="#experience" class="nav-item nav-link">Réalisation</a>
+                  <a href="#formation" class="nav-item nav-link">Formation</a>
+                  <a href="#contact" class="nav-item nav-link contact">contact</a>
+               </div>
+               <div class="navbar-nav ms-auto">
+                  <a href="#" class="nav-item nav-link"><i id="iconTheme" class="fa  fa-toggle-off"></i></a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div id="wrapper" class="wrapper">
+         <main>
+            <!--Expériences-->
+            <section id="experience">
+               
+               <div class="realisation bg-transparent card position-relative">
+                  <h2 class="title-realisation">Réalisation</h2>
+                  <div class="flex-responsives">
+                     <!--CupPlante-->
+                     <div class="col-md-5 position-relative">
+                        <h3 class="title-realisation">CupPlante</h3>
+                        <div class="item-overlay animated wow fadeIn ">
+                           <a href="#" data-bs-toggle="modal" data-bs-target="#cupplanteModal" title="">
+                              <img src="images/ecran.jpg" alt="O'clock"/>
+                              <div class="overlay fade-overlay">			
+                                 <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#cupplanteModal">
+                                 <i class="fa-solid fa-circle-info fa-3x"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="cupplanteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="cupplanteModalLabel">CupPlante</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    ...
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Une taupe Chez Vous-->
+                     <div class="col-md-5 position-relative">
+                        <h3 class="title-realisation">Une Taupe Chez Vous</h3>
+                        <div class="item-overlay animated wow fadeIn">
+                           <a href="#" data-bs-toggle="modal" data-bs-target="#taupeModal" title="">
+                              <img src="images/taupe.jpg" alt="Une Taupe Chez Vous"/>
+                              <div class="overlay fade-overlay">			
+                                 <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#taupeModal">
+                                 <i class="fa-solid fa-circle-info fa-3x"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="taupeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="taupeModalLabel">Une Taupe Chez Vous</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    ...
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Vidéo-->
+                     <div class="col-md-5 position-relative">
+                        <h3 class="title-realisation ">Vidéo</h3>
+                        <div class="item-overlay animated wow fadeIn">
+                           <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal" title="">
+                              <img src="images/taupe.jpg" alt="Une Taupe Chez Vous"/>
+                              <div class="overlay fade-overlay">			
+                                 <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                 <i class="fa-solid fa-circle-info fa-3x"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="videoModalLabel">Vidéo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VlaaeLxRsXE?controls=0&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--Liste Formation-->
+            <section id="formation" class="card">
+               <ul class="realisation position-relative">
+                  <h2 class="title-realisation">Formation</h2>
+                  <li>
+                     <p><strong><a class="formation__liens" href="https://oclock.io/formations/developpeur-web"> O'clock</a></strong>, Développeur Web <time datetime="2022-02">Février 2022</time></p>
+                  </li>
+               </ul>
+            </section>
+         </main>
+         <!--Description Page-->
+         <aside id="propos">
+            <div class="accordion bg-transparent  accordion-flush " id="accordionFlushExample">
+               <!--Profil-->
+               <div class="accordion-item bg-transparent ">
+                  <h2 class="accordion-header text-white " id="flush-headingOne">
+                     <button class="accordion-button bg-transparent collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <p class="accordion-text">Profil</p>
+                     </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                     <div class="accordion-body">
+                        <p>
+                           Après 15 ans à créer blogs et sites web, je suis une formation certifiante pour devenir développeur.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!--Contact-->
+               <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                     <button class="accordion-button bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <p class="accordion-text">Contact</p>
+                     </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                     <div class="accordion-body">
+                        <ul class="list-contact">
+                           <li><a href="#"><i class="fa-solid fa-user"></i>Theneau Maxime</a></li>
+                           <li><a href="#"><i class="fa-solid fa-location-dot"></i>Marseille</a></li>
+                           <li><a href="#"><i class="fa-solid fa-phone-volume"></i>06 22 06 80 36</a></li>
+                        </ul>
+                        <!--Liste liens social-->
+                        <ul class="list-social">
+                           <li><a href="mailto:maxime.t@maximemotivationplusplus.fr"><i class="fa fa-envelope-open-text fa-hover"></i></a></li>
+                           <li><a href="https://twitter.com/MTheneau"><i class="fa fa-twitter fa-hover"></i></a></li>
+                           <li><a href="https://github.com/MaximeThe"><i class="fa fa-github fa-hover"></i></a></li>
+                           <li><a href="https://www.linkedin.com/in/maxime-theneau/"><i class="fa fa-linkedin fa-hover"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!--Compétence-->			
+               <div id="contact" class="accordion-item  bg-transparent">
+                  <h2 class="accordion-header data-parent" id="con">
+                     <button class="accordion-button bg-transparent collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <p class="accordion-text">Compétence</p>
+                     </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                     <div class="accordion-body accordion-list">
+                        <!-- Carousel Compétence -->
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <div class=" h-100  d-block ">
+                                    <i class="fa-brands fa-html5 fa-2x"></i>
+                                    <br>HTML/CSS
+                                 </div>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class=" h-100  d-block ">
+                                    <i class="fa-brands fa-php fa-2x"></i><br>
+                                    PHP
+                                 </div>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class=" h-100  d-block ">
+                                    <i class="fa-brands fa-js fa-2x"></i><br>
+                                    JavaScript
+                                 </div>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class=" h-100  d-block ">
+                                    <i class="fa-solid fa-database fa-2x"></i><br>
+                                    SQL
+                                 </div>
+                              </div>
+                           </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </aside>
+         <!-- <footer id="contact" class="container-fluid">
+            <div class="container py-4">
+            
+            	
+            	<form id="contactForm">
+              
+            	  
+            	  <div class="mb-3">
+            		<label class="form-label" for="name">Name</label>
+            		<input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+            		<div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+            	  </div>
+              
+            	  
+            	  <div class="mb-3">
+            		<label class="form-label" for="emailAddress">Email Address</label>
+            		<input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+            		<div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+            		<div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+            	  </div>
+              
+            	  
+            	  <div class="mb-3">
+            		<label class="form-label" for="message">Message</label>
+            		<textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+            		<div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+            	  </div>
+              
+            	  
+            	  <div class="d-none" id="submitSuccessMessage">
+            		<div class="text-center mb-3">Form submission successful!</div>
+            	  </div>
+              
+            	  
+            	  <div class="d-none" id="submitErrorMessage">
+            		<div class="text-center text-danger mb-3">Error sending message!</div>
+            	  </div>
+              
+            	  
+            	  <div class="d-grid">
+            		<button class="btn btn-primary btn-lg" type="submit">Submit</button>
+            	  </div>
+              
+            	</form>
+              
+              </div>
+            </footer>  -->
+      </div>
+      <!--JS-->
+      <script src="js/theme.js"></script>
+      <script src="js/typed.js"></script>
+      <script src="js/app.js"></script>
+      <!--Bootstrap v5.0.2 (https://getbootstrap.com/)--> 
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Font Awesome 6.1.1 (https://fontawesome.com/)  -->
+      <script src="https://kit.fontawesome.com/6d373d07e2.js" crossorigin="anonymous"></script>
+   </body>
+</html>
