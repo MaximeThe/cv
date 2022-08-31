@@ -12,4 +12,4 @@ Portfolio Développeur Web à Marseille, réaliser en Mobile First intégralemen
 
 ## Wireframe
 
-![Wireframe portfolio Theneau Maxime](https://raw.githubusercontent.com/MaximeThe/Maximethe.github.io/React.Js/docs/images/github/wireframe.jpg "Wireframe portfolio Theneau Maxime")
+![Wireframe portfolio Theneau Maxime](./wireframe.jpg "Wireframe portfolio Theneau Maxime")
