@@ -13,6 +13,7 @@ function cV() {
         <h1>Theneau Maxime</h1>
         <h2>Developpeur web Front-End à Marseille</h2>
         <p>In Progress</p>
+        
       </div>
     </div>
   );
