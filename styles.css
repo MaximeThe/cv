@@ -1,8 +1,8 @@
-body{
+html{
   margin: auto;
   height: 100vh;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Major Mono Display', monospace;
 }
 
 
