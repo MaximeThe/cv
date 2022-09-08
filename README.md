@@ -1,14 +1,7 @@
 # Theneau Maxime Portfolio
-Portfolio Développeur Web à Marseille, réaliser en Mobile First intégralement en paralax avec React / React-Redux.
+En cours...
 
-## [Demo](https://maximetheneau.github.io/Maximethe.github.io/)
-
-## Langages utilisés
-
-- React (18.1.0), React-Redux
-- JavaScript, JSX
-- SASS, SCSS
-- HTML5/CSS
+## [Demo](https://maximetheneau.github.io/MaximeTheneau-Portofolio/)
 
 ## Wireframe
 
