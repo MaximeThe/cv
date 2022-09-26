@@ -14,3 +14,12 @@ export function saveCategory(categories) {
     categories: categories,
   };
 }
+
+export const SAVE_EXPERIENCES = 'SAVE_EXPERIENCES';
+// Action creator => On l'utilise au moment du dispatch()
+export function saveExperience(experiences) {
+  return {
+    type: SAVE_EXPERIENCES,
+    experiences: experiences,
+  };
+}

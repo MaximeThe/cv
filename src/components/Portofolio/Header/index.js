@@ -1,20 +1,21 @@
+import { useSelector } from 'react-redux';
 import './style.scss';
 
 function Header() {
+  const categories = useSelector((state) => state.category.categories);
+  // console.log(categoriesHeader.title);
   return (
     <header className="header">
       <div className="header-navbar">
-        <ul>
-          <li className="header-navbar_item">
-            <a href="#about">Accueil</a>
-          </li>
-          <li className="header-navbar_item">
-            <a href="#Experiences">Projet</a>
-          </li>
-          <li className="header-navbar_item">
-            <a href="#Contact">Contact</a>
-          </li>
-        </ul>
+        { categories.map((category) => (
+          <div key={category.id}>
+            <ul>
+              <li>
+                <a href={`${category.idTitle}`}>{category.title}</a>
+              </li>
+            </ul>
+          </div>
+        ))}
       </div>
     </header>
   );
