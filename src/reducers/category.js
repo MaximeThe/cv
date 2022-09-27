@@ -1,8 +1,8 @@
-import { SAVE_CATEGORY, SAVE_EXPERIENCES } from '../action/category';
+import { CATEGORIES_FETCH, SAVE_CATEGORY } from '../action/category';
 
 export const initialState = {
   categories: [],
-  experiences: [],
+  categoriesFetch: false,
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -12,10 +12,10 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         categories: action.categories,
       };
-    case SAVE_EXPERIENCES:
+    case CATEGORIES_FETCH:
       return {
         ...state,
-        experiences: action.experiences,
+        categoriesFetch: !state.fetch,
       };
     default:
       return state;

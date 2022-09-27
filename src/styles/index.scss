@@ -2,10 +2,30 @@
 @use 'vars';
 @use 'icon';
 @use 'fonts';
+@use 'fontsSignature';
 
 body {
   font-family: 'fontGeneral';
+  color: vars.$color-primary;
+  text-align: center;
 }
 h1, h2{
   font-family: 'fontTitle';
+  font-weight: bold;
+}
+button {
+  border: none;
+  background: none;
+}
+img{
+  max-width: 100%;
+  margin: auto;
+}
+a:hover{
+  color: vars.$color-blue;
+  text-shadow: 0 0 0.2rem vars.$color-white;
+
+}
+hr{
+  width: 90%;
 }

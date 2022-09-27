@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchCategory } from '../../action/category';
 import Footer from './Footer';
 import Header from './Header';
@@ -11,11 +11,17 @@ function Portofolio() {
   useEffect(() => {
     dispatch(fetchCategory());
   }, []);
+  const categoriesFetch = useSelector((state) => state.category.categoriesFetch);
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      {!categoriesFetch && (<h1>test</h1>)}
+      {categoriesFetch && (
+      <>
+        <Header />
+        <Main />
+        <Footer />
+      </>
+      )}
     </>
   );
 }

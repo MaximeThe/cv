@@ -1,13 +1,12 @@
 export const FETCH_CATEGORY = 'FETCH_CATEGORY';
 
-// Action creator => On l'utilise au moment du dispatch()
 export function fetchCategory() {
   return {
     type: FETCH_CATEGORY,
   };
 }
 export const SAVE_CATEGORY = 'SAVE_CATEGORY';
-// Action creator => On l'utilise au moment du dispatch()
+
 export function saveCategory(categories) {
   return {
     type: SAVE_CATEGORY,
@@ -15,11 +14,11 @@ export function saveCategory(categories) {
   };
 }
 
-export const SAVE_EXPERIENCES = 'SAVE_EXPERIENCES';
-// Action creator => On l'utilise au moment du dispatch()
-export function saveExperience(experiences) {
+export const CATEGORIES_FETCH = 'CATEGORIES_FETCH';
+
+export function categoriesFetch(fetch) {
   return {
-    type: SAVE_EXPERIENCES,
-    experiences: experiences,
+    type: CATEGORIES_FETCH,
+    categoriesFetch: fetch,
   };
 }

@@ -1,0 +1,31 @@
+@use './src/styles/vars';
+
+.footer {
+    transition: color 0.5s ease-in-out;
+    background: #e9ece8;
+    padding: 1rem;
+    margin: 2rem 0 0;
+    font-size: 1.5rem;
+    & ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2.5rem;
+    }
+    &-link:hover{
+        color: vars.$color-blue;; 
+        transition: color 0.5s ease-in-out;
+
+    }
+    &-author {
+        opacity: 0.5;
+        text-align: center;
+        margin: 1rem;
+        &_signature {
+            font-size: 2rem;
+            padding: 0 0.5rem;
+            display: inline-block;
+        }
+    }
+
+}
