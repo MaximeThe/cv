@@ -1,6 +1,9 @@
 @import '../../../styles/vars';
 
 .home{
+  &-picture-title{
+    width: 90%;
+  }
   &-title{
     font-size: 2rem;
     font-weight: 600;
@@ -59,11 +62,17 @@
     &-picture-experience{
       width: 70%;
     }
+    &-picture-title{
+      width: 80%;
+    }
   }
 }
 
 @media screen and (min-width: 1024px) {
   .home{
+    &-picture-title{
+      width: 730px;
+    }
     &-picture-experience{
       width: 25rem;
       & a{

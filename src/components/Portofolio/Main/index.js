@@ -19,10 +19,10 @@ function Main() {
       {
               categories.filter((item) => item.idTitle === '#Projet').map((item) => (
                 <div key={item.id} className="home-picture">
-                  <div key={item.id} id={item.title} className="header-sticky">
+                  <div key={item.id} id={item.title}>
                     <picture>
                       <source srcSet={item.imgWebp} type="image/webp" />
-                      <img src={item.imgSvg} alt={item.title} />
+                      <img src={item.imgSvg} alt={item.title} className="home-picture-title" />
                     </picture>
                   </div>
                   <h1 id={item.title} className="home-title">{item.title}</h1>
@@ -53,7 +53,7 @@ function Main() {
               <div key={item.id} className="home-picture">
                 <picture>
                   <source srcSet={item.imgWebp} type="image/webp" />
-                  <img src={item.imgSvg} alt={item.title} />
+                  <img src={item.imgSvg} alt={item.title} className="home-picture-title" />
                 </picture>
                 <h2 key={item.id} className="home-title" id={item.title}>{item.title}</h2>
               </div>
